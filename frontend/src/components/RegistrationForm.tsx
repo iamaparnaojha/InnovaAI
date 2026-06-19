@@ -44,7 +44,7 @@ const RegistrationForm: React.FC = () => {
   const onSubmit = async (data: FormValues) => {
     setStatus('idle');
     try {
-      const res = await fetch('/api/enquiry', {
+      const res = await fetch('https://innovaai.onrender.com/api/enquiry', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),

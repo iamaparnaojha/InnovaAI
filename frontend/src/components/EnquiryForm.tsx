@@ -29,7 +29,7 @@ export const EnquiryForm: React.FC = () => {
 
   const onSubmit = async (data: EnquiryFormData) => {
     try {
-      await fetch("/api/enquiry", {
+      await fetch("https://innovaai.onrender.com/api/enquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
